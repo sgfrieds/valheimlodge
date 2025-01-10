@@ -3,3 +3,6 @@ languageCode = 'en-us'
 title = 'Valheim Lodge'
 theme = 'ananke'
 sectionPagesMenu = 'main'
+extensions = [
+  "hardLineBreaks"
+]
