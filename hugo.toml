@@ -1,0 +1,4 @@
+baseURL = 'https://valheimlodge.org/'
+languageCode = 'en-us'
+title = 'Valheim Lodge'
+theme = 'ananke'
