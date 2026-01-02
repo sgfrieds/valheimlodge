@@ -14,7 +14,9 @@
 		"lint": "prettier --check . && eslint .",
 		"test:e2e": "playwright test",
 		"test": "npm run test:e2e",
-		"types": "wrangler types"
+		"types": "wrangler types",
+		"generate:summaries": "tsx scripts/generate-newsletter-summaries.ts",
+		"fix:summaries": "tsx scripts/generate-newsletter-summaries.ts --fix-truncated"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.4.0",
@@ -33,12 +35,14 @@
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.13.1",
 		"globals": "^16.5.0",
+		"pdf-parse": "1.1.1",
 		"prettier": "^3.7.4",
 		"prettier-plugin-svelte": "^3.4.0",
 		"prettier-plugin-tailwindcss": "^0.7.2",
 		"svelte": "^5.45.6",
 		"svelte-check": "^4.3.4",
 		"tailwindcss": "^4.1.17",
+		"tsx": "^4.21.0",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.48.1",
 		"vite": "^7.2.6",
@@ -48,5 +52,8 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"@lucide/svelte": "^0.562.0"
 	}
 }
